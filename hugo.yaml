@@ -1,0 +1,137 @@
+baseURL: https://blog.springx.fun/
+languageCode: en-us
+title: 酸辣土豆丝 iCS
+theme: ["PaperMod"]
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: 酸辣土豆丝 iCS
+  description: "公众号：酸辣土豆丝 iCS | 这里是腰突码农的网络日志！我是一名后端程序猿，这里主要探讨 Linux、Docker、Shell，Java、Go、Spring、MySQL、Redis、Kafka、RabbitMQ、Elasticsearch，以及 Vue.js、JavaScript、HTML、CSS 等，当然也分析非技术类的所见所得！"
+  keywords: [Java, Vue, Linux, Docker, Golang, MySQL, Spring, 程序员, 数据库]
+  author: Spring
+  # author: ["Spring", "You"] # multiple authors
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    disableFingerprinting: true
+    favicon: "<link / abs url>"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "酸辣土豆丝 iCS"
+    icon: /potato-64.jpg
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: ExampleSite
+    subtitle: "This is subtitle"
+    imageUrl: "<img location>"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: 🤔 我是一名后端程序猿，主要专注于 Java Web 应用程序开发，平时也会使用 Vue 写写前端。对于编码和思考如何把代码转化为高效、可靠的软件充满热情。📫 除了编程之外，我对开源项目非常感兴趣，虽然没有参与过开源项目的贡献和维护，但一直在努力学习和积累经验，希望有一天能够为开源项目做出自己的贡献。同时，在工作中充分利用开源社区资源，提高编码技能和解决问题的能力。🌱 目前我居住在一个美丽的城市，这里有着浓郁的文化氛围和美食文化，也有着现代化的技术环境和创新精神。我感到非常幸运能够在这里工作和生活，享受着快乐和充实的时光。
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/heyzqq"
+    - name: Email
+      url: "mailto:zqqisme@gmail.com"
+    - name: Rss
+      url: "https://springx.fun/rss.xml"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  editPost:
+    URL: "https://github.com/<path_to_repo>/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: Categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: Tags
+      name: tags
+      url: /tags/
+      weight: 20
+    # - identifier: search
+    #   name: Search
+    #   url: /search/
+    #   weight: 30
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
