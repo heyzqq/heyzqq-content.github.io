@@ -43,11 +43,11 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "/favicon.ico"
+    # favicon16x16: "<link / abs url>"
+    # favicon32x32: "<link / abs url>"
+    apple_touch_icon: "/favicon.ico"
+    safari_pinned_tab: "/favicon.ico"
 
   label:
     text: "酸辣土豆丝 iCS"
@@ -72,7 +72,10 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: 🤔 我是一名后端程序猿，主要专注于 Java Web 应用程序开发，平时也会使用 Vue 写写前端。对于编码和思考如何把代码转化为高效、可靠的软件充满热情。📫 除了编程之外，我对开源项目非常感兴趣，虽然没有参与过开源项目的贡献和维护，但一直在努力学习和积累经验，希望有一天能够为开源项目做出自己的贡献。同时，在工作中充分利用开源社区资源，提高编码技能和解决问题的能力。🌱 目前我居住在一个美丽的城市，这里有着浓郁的文化氛围和美食文化，也有着现代化的技术环境和创新精神。我感到非常幸运能够在这里工作和生活，享受着快乐和充实的时光。
+    Content: |
+      🤔 我是一名后端程序猿，主要专注于 Java Web 应用程序开发，平时也会使用 Vue 写写前端。对于编码和思考如何把代码转化为高效、可靠的软件充满热情。\
+      📫 除了编程之外，我对开源项目非常感兴趣，虽然没有参与过开源项目的贡献和维护，但一直在努力学习和积累经验，希望有一天能够为开源项目做出自己的贡献。同时，在工作中充分利用开源社区资源，提高编码技能和解决问题的能力。\
+      🌱 目前我居住在一个美丽的城市，这里有着浓郁的文化氛围和美食文化，也有着现代化的技术环境和创新精神。我感到非常幸运能够在这里工作和生活，享受着快乐而充实的时光。
 
   socialIcons:
     - name: github

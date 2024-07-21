@@ -31,7 +31,7 @@ cover:
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
 editPost: # github 当前文章修改/建议
-    URL: "https://github.com/heyzqq/heyzqq-content.github.io/content"
+    URL: "https://github.com/heyzqq/heyzqq-content.github.io/tree/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---

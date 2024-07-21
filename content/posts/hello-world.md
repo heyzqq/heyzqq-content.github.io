@@ -30,7 +30,7 @@ cover:
     relative: false
     hidden: false
 editPost:
-    URL: "https://github.com/heyzqq/heyzqq-content.github.io/content"
+    URL: "https://github.com/heyzqq/heyzqq-content.github.io/tree/main/content"
     Text: "Suggest Changes"
     appendFilePath: true
 ---
