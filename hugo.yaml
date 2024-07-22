@@ -57,13 +57,15 @@ params:
   # profile-mode
   profileMode:
     enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
-    imageUrl: "<img location>"
+    title: 酸辣土豆丝 iCS
+    subtitle: "Stay hungry, stay foolish!"
+    # imageUrl: "<img location>"
     imageWidth: 120
     imageHeight: 120
     imageTitle: my image
     buttons:
+      - name: Archives
+        url: archives
       - name: Posts
         url: posts
       - name: Tags
@@ -112,22 +114,26 @@ params:
     distance: 1000
     threshold: 0.4
     minMatchCharLength: 0
-    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: Categories
-      name: categories
-      url: /categories/
+    # - identifier: Categories
+    #   name: Categories
+    #   url: /categories/
+    #   weight: 10
+    - identifier: Archives
+      name: Archives
+      url: /archives/
       weight: 10
     - identifier: Tags
-      name: tags
+      name: Tags
       url: /tags/
       weight: 20
-    # - identifier: search
-    #   name: Search
-    #   url: /search/
-    #   weight: 30
+    - identifier: Search
+      name: Search
+      url: /search/
+      weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
@@ -138,3 +144,12 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
+
+# Search - Fuse.js
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
+
