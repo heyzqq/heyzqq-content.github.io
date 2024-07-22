@@ -1,6 +1,6 @@
 ---
 title: "Hello, hugo!"
-date: 2020-09-15T11:30:03+00:00
+date: 2017-09-15T11:30:03+08:00
 # weight: 1
 # aliases: ["/others"]
 tags: ["others"]

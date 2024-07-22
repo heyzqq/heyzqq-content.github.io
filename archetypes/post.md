@@ -1,11 +1,10 @@
 ---
 title: "My 1st post"
-date: 2020-09-15T11:30:03+00:00
+date: {{ .Date }}
 # weight: 1
 # aliases: ["/tech"]
 tags: ["tech"]
-author: "Spring"
-# author: ["Spring", "You"] # multiple authors
+author: ["Spring"]
 showToc: true
 TocOpen: false
 draft: false
@@ -24,14 +23,14 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
-cover:
-    image: "<image path/url>" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
+# cover:
+#     image: "<image path/url>" # image path/url
+#     alt: "<alt text>" # alt text
+#     caption: "<text>" # display caption under cover
+#     relative: false # when using page bundles set this to true
+#     hidden: true # only hide on current single page
 editPost: # github 当前文章修改/建议
     URL: "https://github.com/heyzqq/heyzqq-content.github.io/tree/main/content"
-    Text: "Suggest Changes" # edit text
+    Text: "Suggest Changes"
     appendFilePath: true # to append file path to Edit link
 ---
