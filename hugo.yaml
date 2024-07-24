@@ -12,6 +12,11 @@ minify:
   disableXML: true
   minifyOutput: true
 
+sitemap:
+  changeFreq: "weekly"
+  filename: sitemap.xml
+  priority: 0.6
+
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: 酸辣土豆丝 iCS
@@ -89,7 +94,7 @@ params:
 
   analytics:
     google:
-      SiteVerificationTag: "XYZabc"
+      SiteVerificationTag: "xkB2VH159BqxPq1aGZjUYzx0I0g7V88UGVtyllS-kD4"
     bing:
       SiteVerificationTag: "XYZabc"
     yandex:
