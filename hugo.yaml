@@ -1,4 +1,4 @@
-baseURL: https://blog.springx.fun/
+baseURL: https://springx.fun/
 languageCode: en-us
 title: 酸辣土豆丝 iCS
 theme: ["PaperMod"]
@@ -15,11 +15,12 @@ minify:
 sitemap:
   changeFreq: "weekly"
   filename: sitemap.xml
-  priority: 0.6
+  priority: 0.5
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: 酸辣土豆丝 iCS
+  baseUrl: https://springx.fun
   description: "公众号：酸辣土豆丝 iCS | 这里是腰突码农的网络日志！我是一名后端程序猿，这里主要探讨 Linux、Docker、Shell，Java、Go、Spring、MySQL、Redis、Kafka、RabbitMQ、Elasticsearch，以及 Vue.js、JavaScript、HTML、CSS 等，当然也分析非技术类的所见所得！"
   keywords: [Java, Vue, Linux, Docker, Golang, MySQL, Spring, 程序员, 数据库]
   author: Spring
@@ -48,15 +49,15 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     disableFingerprinting: true
-    favicon: "/favicon.ico"
-    favicon16x16: "/favicon.ico"
-    favicon32x32: "/favicon.ico"
-    apple_touch_icon: "/favicon.ico"
-    safari_pinned_tab: "/favicon.ico"
+    favicon: "/favicon.png"
+    favicon16x16: "/favicon16.png"
+    favicon32x32: "/favicon32.png"
+    apple_touch_icon: "/favicon.png"
+    safari_pinned_tab: "/favicon.png"
 
   label:
     text: "酸辣土豆丝 iCS"
-    icon: /potato-64.jpg
+    icon: /favicon.png
     iconHeight: 35
 
   # profile-mode
@@ -96,9 +97,9 @@ params:
     google:
       SiteVerificationTag: "xkB2VH159BqxPq1aGZjUYzx0I0g7V88UGVtyllS-kD4"
     bing:
-      SiteVerificationTag: "XYZabc"
-    yandex:
-      SiteVerificationTag: "XYZabc"
+      SiteVerificationTag: "9C8D84968D4763DB920DCBA257ECDFB0"
+    # yandex:
+    #   SiteVerificationTag: "XYZabc"
 
   cover:
     hidden: false # hide everywhere but not in structured data
