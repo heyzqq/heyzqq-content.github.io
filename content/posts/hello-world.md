@@ -136,7 +136,7 @@ description: "Desc Text."
 然后，当需要写 `tech` 类的文章是，使用 `--kind` 参数来指定创建的文档类型即可：
 
 ```SH
-> hugo new content -k tech posts/java.md
+> hugo new content -k post posts/tech/java.md
 ```
 
 ## 03 发布

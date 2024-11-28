@@ -100,6 +100,8 @@ params:
       SiteVerificationTag: "9C8D84968D4763DB920DCBA257ECDFB0"
     # yandex:
     #   SiteVerificationTag: "XYZabc"
+    baidu: # 辣鸡百度，格式固定
+      SiteVerificationTag: codeva-n0mpHr4G07
 
   cover:
     hidden: false # hide everywhere but not in structured data
