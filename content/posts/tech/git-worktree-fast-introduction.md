@@ -3,7 +3,7 @@ title: "Git Worktree Cheatsheet (Worktree 速查表)"
 date: 2024-11-28T21:51:17+08:00
 # weight: 1
 # aliases: ["/tech"]
-tags: ["tech"]
+tags: ["tech", "git"]
 author: ["Spring"]
 showToc: true
 TocOpen: false
@@ -106,7 +106,28 @@ project_name/
 D:/Work/project_name         128056e [feature/test]
 ```
 
-**这里需要注意**：使用 `git worktree add -b new-branch ../project_name` 时，如果直接推送的话，并不是推送 `new-branch` 分支，而是相当于在原分支提交并推送。**（修复 bug 时候要注意，容易不小心直接提交到 master 上 ......）**
+**这里需要注意**：使用 `git worktree add -b new-branch ../project_name` 时，如果直接推送的话，并不是推送 `new-branch` 分支，而是相当于在原分支提交并推送。**修复 bug 时候要注意，容易不小心直接提交到 master 上 ......**
+
+在创建新的工作区时，可以看到默认会把新的工作区/新的分支关联到源分支：
+
+```sh
+# git worktree add -b <new-branch> ../project_name <src-branch>
+> git worktree add -b f-new ../proj-ww origin/f-test
+Preparing worktree (new branch 'f-new')
+branch 'f-new' set up to track 'origin/f-test'.  # 这里可以看到，关联了远程分支
+Updating files: 100% (1024/1024), done.
+HEAD is now at 1314520a commit_info
+```
+
+如果要提交新的分支，需要从指定的 commit-id 切出：
+
+```sh
+# git worktree add -b <new-branch> ../project_name <commit-id>
+> git worktree add -b f-new  ../proj-ww 195d5bbf
+Preparing worktree (new branch 'f-new')
+Updating files: 100% (1024/1024), done.
+HEAD is now at 195d5bbf fix sth.
+```
 
 ## 注意事项
 
